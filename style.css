@@ -1,0 +1,426 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONTE GLOBAL */
+body {
+    font-family: "Noto Rashi Hebrew", serif;
+    line-height: 1.5;
+}
+
+/* MENU */
+.cabecalho {
+    background-color: #643B7A;
+    color: white;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+/* MENU TOPO */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #3D1950;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+/* HOVER NO MENU */
+.menu a:hover {
+    color: #EACCFA;
+}
+
+/* CONTEÚDO HEADER (CARD) */
+.conteudo-card {
+    background: linear-gradient(180deg, #643B7A, #3D1950);
+    border-radius: 12px;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+/* CONTEÚDO INTERNO */
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+/* TEXTO */
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.texto h1 {
+    font-size: 2rem;
+}
+
+/* IMAGEM */
+.img-perfil {
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid #EACCFA;
+}
+
+/* SEÇÕES */
+section {
+    padding: 40px 20px;
+}
+
+/* SOBRE */
+#sobre {
+    background-color: #916BA5;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* TÍTULO */
+.titulo {
+    color: #EACCFA;
+    margin-bottom: 20px;
+}
+
+/* CARD */
+.sobre-card {
+    background: linear-gradient(180deg, #643B7A, #3D1950);
+    color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+/* TEXTO */
+.paragrafo-desc {
+    color: #f3e9f7;
+    line-height: 1.6;
+}
+
+/* FORMAÇÃO */
+#formacao {
+    background-color: #EACCFA;
+    text-align: center;
+}
+
+/* TÍTULO */
+#formacao h2 {
+    margin-bottom: 20px;
+    color: #3D1950;
+}
+
+/* CARD PRINCIPAL */
+.formacao-box {
+    background: linear-gradient(180deg, #643B7A, #3D1950);
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* CADA BLOCO */
+.formacao-item {
+    padding: 15px;
+    text-align: left;
+}
+
+/* LINHA SEPARADORA */
+.formacao-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* TÍTULOS */
+.formacao-item h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #EACCFA;
+}
+
+/* TEXTOS */
+.formacao-item p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* PORTFÓLIO */
+#portfolio {
+    background-color: #C2A9CF;
+}
+
+/* CARDS */
+.projetos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD INDIVIDUAL */
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* HOVER CARD */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGEM CARD */
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* LINK CARD */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #643B7A;
+    font-weight: bold;
+}
+
+/* CONTATO */
+#contato {
+    background: #916BA5;
+    padding: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background: linear-gradient(180deg, #643B7A, #3D1950);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+
+/* INPUTS */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BOTÃO */
+input[type="submit"] {
+    background-color: #643B7A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #3D1950;
+}
+
+/* BOTÃO (tema) */
+button {
+    font-family: inherit;
+}
+
+/* FOOTER */
+footer {
+    background-color: #240733;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/*  TEMA CLARO COM SESSÕES INTERCALADAS  */
+body.tema-claro {
+    background-color: #3D1950; /* cor geral do site */
+    color: #f3e9f7; /* cor do texto padrão */
+}
+
+/* HEADER - escuro */
+body.tema-claro .cabecalho {
+    background-color: #240733; /* roxo bem escuro */
+    color: #f3e9f7;
+}
+
+/* MENU - mantém contraste */
+body.tema-claro .menu {
+    background-color: #3D1950;
+}
+
+body.tema-claro .menu a {
+    color: #f3e9f7;
+}
+
+body.tema-claro .menu a:hover {
+    color: #EACCFA;
+}
+
+/* CONTEÚDO HEADER (H1, P, IMG) - card */
+body.tema-claro .conteudo-card {
+    background-color: #643B7A; /* roxo médio */
+    color: #f3e9f7;
+}
+
+/* SOBRE - mais claro */
+body.tema-claro #sobre {
+    background-color: #916BA5; /* roxo claro */
+    color: #f3e9f7;
+}
+
+/* Card Sobre */
+body.tema-claro .sobre-card {
+    background-color: #643B7A; /* roxo médio */
+    color: #f3e9f7;
+}
+
+/* FORMAÇÃO - escuro */
+body.tema-claro #formacao {
+    background-color: #3D1950; /* roxo escuro */
+    color: #f3e9f7;
+}
+
+/* Card Formação */
+body.tema-claro .formacao-box {
+    background-color: #643B7A; /* roxo médio */
+    color: #f3e9f7;
+}
+
+/* PORTFÓLIO - mais claro */
+body.tema-claro #portfolio {
+    background-color: #916BA5; /* roxo claro */
+    color: #f3e9f7;
+}
+
+/* Cards Portfólio */
+body.tema-claro .card {
+    background-color: #643B7A; /* roxo médio */
+    color: #f3e9f7;
+}
+
+body.tema-claro .card a {
+    color: #EACCFA;
+}
+
+body.tema-claro .card a:hover {
+    color: #fff;
+}
+
+/* CONTATO - escuro */
+body.tema-claro #contato {
+    background-color: #3D1950; /* roxo escuro */
+    color: #f3e9f7;
+}
+
+/* Formulário Contato */
+body.tema-claro form {
+    background-color: #643B7A; /* roxo médio */
+    color: #f3e9f7;
+}
+
+/* Inputs e Botão Contato */
+body.tema-claro input,
+body.tema-claro textarea {
+    background-color: #916BA5; /* roxo claro */
+    color: #000;
+    border: 1px solid #f3e9f7;
+}
+
+body.tema-claro input[type="submit"] {
+    background-color: #EACCFA; /* botão visível */
+    color: #3D1950;
+    border: none;
+}
+
+body.tema-claro input[type="submit"]:hover {
+    background-color: #fff;
+    color: #3D1950;
+}
+
+/* FOOTER - escuro */
+body.tema-claro footer {
+    background-color: #240733; /* roxo bem escuro */
+    color: #f3e9f7;
+}
+
+/* Links gerais */
+body.tema-claro a {
+    color: #EACCFA;
+}
+
+body.tema-claro a:hover {
+    color: #fff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    /* MENU VIRA LATERAL (SIMPLES) */
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* HEADER */
+    .conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-perfil {
+        margin-bottom: 10px;
+    }
+
+    .sobre-card {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .paragrafo-desc {
+        font-size: 0.95rem;
+    }
+
+    .formacao-box {
+        width: 100%;
+    }
+
+    .formacao-item {
+        padding: 12px;
+    }
+
+    /* CARDS */
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}

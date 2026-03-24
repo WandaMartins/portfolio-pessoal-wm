@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Rashi+Hebrew:wght@100..900&display=swap" rel="stylesheet">
+    <title>Portfólio - Wanda Martins </title>
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="conteudo-card">
+            <div class="conteudo">
+
+                <div class="texto">
+                    <h1>Wanda Martins</h1>
+                    <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+                    <span class="texto-span">Em constante evolução na tecnologia 🚀</span>
+                </div>
+
+                <img src="./imagens/WM.jpg" alt="Foto de perfil da aluna Wanda Martins" class="img-perfil">
+
+            </div>
+        </div>
+
+    </header>
+    
+    <main>
+        <section id="sobre">
+            <h2 class="titulo">Sobre Mim</h2>
+
+            <div class="sobre-card">
+                <p class="paragrafo-desc">
+                    Me chamo Wanda Martins, tenho 27 anos e sou de São Paulo. Atualmente sou estudante de Análise e
+                    Desenvolvimento de Sistemas, área pela qual venho desenvolvendo grande interesse, principalmente
+                    pela
+                    possibilidade de criar soluções e aprender constantemente novas tecnologias.
+
+                    Sempre fui uma pessoa curiosa e apaixonada por conhecimento. Antes de ingressar na área de
+                    tecnologia,
+                    cursei sete semestres de Psicologia, experiência que contribuiu muito para o desenvolvimento do meu
+                    olhar analítico, empatia e compreensão sobre comportamento humano — habilidades que também considero
+                    valiosas no desenvolvimento de software.
+
+                    Além da tecnologia, tenho grande interesse por arte e cultura. Gosto de poesia, batalhas de rima,
+                    leitura e teatro musical. Também tenho como hobby desenhar e pintar, atividades que estimulam minha
+                    criatividade e atenção aos detalhes. Sou fã do universo de Harry Potter e acredito que histórias e
+                    imaginação têm um papel importante na forma como enxergamos e criamos o mundo ao nosso redor.
+
+                    Estou sempre em busca de aprender coisas novas e de me desenvolver tanto pessoal quanto
+                    profissionalmente.
+                </p>
+            </div>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação</h2>
+
+            <div class="formacao-box">
+
+                <div class="formacao-item">
+                    <h3>Formação Acadêmica</h3>
+                    <p>Análise e Desenvolvimento de Sistemas — UNINTER (em andamento)</p>
+                    <p>Psicologia — UNIP (7 semestres cursados)</p>
+                </div>
+
+                <div class="formacao-item">
+                    <h3>Cursos de Tecnologia</h3>
+                    <p>HTML e CSS — Alura</p>
+                    <p>Lógica de Programação com JavaScript — Alura</p>
+                    <p>Arquitetura de Computadores — Alura</p>
+                </div>
+
+                <div class="formacao-item">
+                    <h3>Idiomas</h3>
+                    <p>Inglês Básico</p>
+                </div>
+
+                <div class="formacao-item">
+                    <h3>Cursos Complementares</h3>
+                    <p>Informática</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <div class="projetos">
+                <article class="card">
+                    <figure>
+                        <img src="imagens/projeto-one-piece.png" alt="Projeto interativo inspirado em One Piece">
+                    </figure>
+                    <h3>Projeto One Piece</h3>
+                    <p>Página interativa inspirada em One Piece com seleção de personagens que exibem imagem e
+                        descrição.</p>
+                    <a href="https://wandamartins.github.io/projeto-one-piece-final/" target="_blank">Ver Projeto</a>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="imagens/projeto-carrossel.png"
+                            alt="Carrossel interativo de linguagens de programação">
+                    </figure>
+                    <h3>Projeto Carrossel de Linguagens</h3>
+                    <p>Carrossel interativo de linguagens de programação com destaque visual ao passar o mouse.</p>
+                    <a href="https://wandamartins.github.io/portfolio-carrossel/" target="_blank">Ver Projeto</a>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="imagens/projeto-portfólio-hobbie.png" alt="Projeto de portfólio pessoal">
+                    </figure>
+                    <h3>Projeto Portfólio</h3>
+                    <p>Site de portfólio com apresentação pessoal, links externos e elementos interativos em HTML, CSS e
+                        JavaScript.</p>
+                    <a href="https://wandamartins.github.io/trabalho-fds/" target="_blank">Ver Projeto</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Digite seu nome...">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="Digite seu e-mail...">
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Me conta o motivo do seu contato!!"
+                        rows="5"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Wanda Martins</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+| parte     | cor     |
+| navbar    | #3D1950 |
+| header    | #643B7A |
+| sobre     | #916BA5 |
+| formação  | #EACCFA |
+| portfólio | #C2A9CF |
+| footer    | #240733 | -->
